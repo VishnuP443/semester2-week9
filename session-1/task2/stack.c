@@ -44,3 +44,4 @@ Node *pop( Stack *stack ) {
 
     return node;
 }
+

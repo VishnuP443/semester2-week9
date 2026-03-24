@@ -10,7 +10,7 @@ $(EXE): $(OBJ)
 	$(CC) $(CFLAGS) -o $@ $^
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@ -lm
 
 clean:
 	rm -f $(EXE) $(OBJ)
