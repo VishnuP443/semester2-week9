@@ -30,6 +30,9 @@ int main( void ) {
     printf("Post-order\n");
     traversePost( tree->root );
     // free memory
+    printf("\n");
+    printTree(tree->root, 5);
+
     deallocateTree( tree->root );
     free(tree);
 

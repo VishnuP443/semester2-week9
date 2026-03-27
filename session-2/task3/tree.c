@@ -94,3 +94,15 @@ void deallocateTree( Node *loc ) {
     
     return;
 }
+
+void printTree(Node *loc, int space) {
+        if (loc == NULL) return;
+            space += 5; 
+            printTree(loc->child[1], space);
+            printf("\n");
+            for (int i = 5; i < space; i++) {
+                printf(" ");
+            }
+            printf("%d\n", loc->data->value);
+            printTree(loc->child[0], space);
+}
