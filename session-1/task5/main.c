@@ -8,6 +8,8 @@
 int main( void ) {
 
     Queue *queue = createQueue();
+    join(queue, createData(3));
+    displayQueue(queue);
 
     // code to test join, leave and display functions
 

@@ -21,6 +21,8 @@ Queue *createQueue( void ) {
     Queue *new = malloc(sizeof(Queue));
     new->blockSize = 10;
     new->size = new->blockSize;
+    new->back = 0;
+    new->front = 0;
     new->data = calloc(new->size,sizeof(Data *));  // allocate an initial block for queue storage
 
     // set initial values for back, front and length
@@ -43,9 +45,12 @@ void enlargeQueue( Queue *queue ) {
 void join( Queue *queue, Data *new ) {
 
     // add new item at the back
+    queue->size++;
+    enlargeQueue(queue);
     // increment back index
+    queue->back++;
     // increment length
-
+    
     return;
 }
 

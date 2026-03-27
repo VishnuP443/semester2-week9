@@ -23,8 +23,12 @@ int main( void ) {
     tree->size = 6;
 
     // traverse to print node data
+    printf("Pre-order\n");
     traversePre( tree->root );
-
+    printf("In-order\n");
+    traverseIn( tree->root );
+    printf("Post-order\n");
+    traversePost( tree->root );
     // free memory
     deallocateTree( tree->root );
     free(tree);

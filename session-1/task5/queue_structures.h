@@ -6,6 +6,8 @@ typedef struct _data {
 typedef struct _queue {
     int blockSize;          // default block-size
     int size;               // currently allocated size
+    int back;
+    int front;
     struct _data **data;    // queue array of Data*
     
     // define indices for queue back, front and length

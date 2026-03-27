@@ -14,6 +14,7 @@ int main( void ) {
 
     // test join 
     // - use traverseI() to display the nodes
+    traverseI(queue);
     // - which pointer do you pass to traverseI(): front or back?
 
     // test leave 

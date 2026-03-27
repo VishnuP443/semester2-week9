@@ -19,8 +19,7 @@ int main( void ) {
     push(stack, createData(4));
     push(stack, createData(4));
     push(stack, createData(4));
-    push(stack, createData(4));
-    push(stack, createData(4));
+    
     displayStack (stack);
 
     // free stack dynamic memory

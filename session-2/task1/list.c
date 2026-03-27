@@ -17,6 +17,7 @@ List *createList( void ) {
     return new;
 }
 
+
 /*
  * add a node after the location (pass loc=NULL to add at the head)
  */
@@ -53,7 +54,8 @@ Node *removeNode( List *list, Node *loc ) {
         removed = loc->next;
         loc->next = removed->next;
     }
-    list->size--;                   // decrease List size
+    list->size--;
+                // decrease List size
 
     return removed;
 }
